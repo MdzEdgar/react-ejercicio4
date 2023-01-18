@@ -11,10 +11,6 @@ function App() {
     stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']
   }
 
-  const handleClick = () => {
-    alert('Me gustan los tacos.')
-  }
-
   return (
     <div className="App">
       <div className="container">
@@ -37,7 +33,7 @@ function App() {
           <li>{person.hobbies[4]}</li>
         </ul>
       </div>
-      <div onClick={handleClick} className="card">
+      <div className="card">
         <h2>Comida favorita</h2>
         <ul>
         <li>{person.comidas[0]}</li>
@@ -59,8 +55,14 @@ function App() {
       </div>
       </div>
       
+      <Personal />
     </div>
   )
 }
 
 export default App
+
+const Personal = () => {
+
+  return <h1>Personal</h1>
+}
