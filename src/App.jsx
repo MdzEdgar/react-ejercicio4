@@ -1,4 +1,5 @@
 import './App.css'
+import FavoriteFood from './components/FavoriteFood'
 
 function App() {
   const person = {
@@ -19,7 +20,7 @@ function App() {
         <h2>Personal</h2>
         <li>{person.name}</li>
         <li>{person.age} años</li>
-        <li>{person.fav}</li>
+        <li>{person.favoriteMovie}</li>
         <li>{person.favoriteMusic}</li>
       </ul>
       </div>
@@ -33,16 +34,7 @@ function App() {
           <li>{person.hobbies[4]}</li>
         </ul>
       </div>
-      <div className="card">
-        <h2>Comida favorita</h2>
-        <ul>
-        <li>{person.comidas[0]}</li>
-        <li>{person.comidas[1]}</li>
-        <li>{person.comidas[2]}</li>
-        <li>{person.comidas[3]}</li>
-        <li>{person.comidas[4]}</li>
-        </ul>
-      </div>
+      
       <div className="card">
         <h2>Mi Stack Tech</h2>
         <ul>
@@ -53,16 +45,11 @@ function App() {
           <li>{person.stack[4]}</li>
         </ul>
       </div>
+
+      <FavoriteFood />
       </div>
-      
-      <Personal />
     </div>
   )
 }
 
 export default App
-
-const Personal = () => {
-
-  return <h1>Personal</h1>
-}
