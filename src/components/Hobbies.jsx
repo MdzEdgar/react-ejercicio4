@@ -1,11 +1,9 @@
-import React from "react";
-
-const Hobbies = () => {
+const Hobbies = (props) => {
   const hobbies = ["Leer", "Ver series", "Ejercicio", "Investigar", ""];
 
   return (
     <div className="card">
-      <h2>Hobbies</h2>
+      <h2>{props.title}</h2>
       <ul>
         <li>{hobbies[0]}</li>
         <li>{hobbies[1]}</li>

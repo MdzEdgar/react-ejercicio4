@@ -1,4 +1,4 @@
-const FavoriteFood = () => {
+const FavoriteFood = (props) => {
   const comidas = [
     "Tacos",
     "Hamburguesa de pollo",
@@ -8,7 +8,7 @@ const FavoriteFood = () => {
   ];
   return (
     <div className="card">
-      <h2>Comida favorita</h2>
+      <h2>{props.title}</h2>
       <ul>
         <li>{comidas[0]}</li>
         <li>{comidas[1]}</li>
