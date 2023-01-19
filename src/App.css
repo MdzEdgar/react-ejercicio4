@@ -62,16 +62,16 @@ ul {list-style: none; padding: 0; margin: 0;}
   padding: 20px;
 }
 
-.card:nth-child(1){
+.card.personal{
   background-color: #5f9ea0;
 }
-.card:nth-child(2){
+.card.hobbies{
   background-color: #8a2be2;
 }
-.card:nth-child(3){
+.card.food{
   background-color: #008000;
 }
-.card:nth-child(4){
+.card.stack{
   background-color: #a52a2a;
   grid-column-start: 2;
   grid-column-end: 2;

@@ -38,13 +38,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Card info={personalInfo} />
+        <Card info={personalInfo} classColor="personal" />
 
-        <Card info={hobbiesInfo} />
+        <Card info={hobbiesInfo} classColor="hobbies"/>
 
-        <Card info={foodInfo} />
+        <Card info={foodInfo} classColor="food"/>
         
-        <Card info={stackInfo} />
+        <Card info={stackInfo} classColor="stack"/>
       </div>
     </div>
   )

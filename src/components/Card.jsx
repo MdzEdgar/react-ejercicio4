@@ -1,6 +1,6 @@
-const Card = ({info}) => {
+const Card = ({info, classColor}) => {
   return (
-    <div className="card">
+    <div className={`card ${classColor}`}>
       <h2>{info.title}</h2>
       <ul>
         <li>{info.info1}</li>
