@@ -1,4 +1,4 @@
-const Personal = () => {
+const Personal = (props) => {
   const person = {
     name: "Edgar Méndez",
     age: 31,
@@ -9,7 +9,7 @@ const Personal = () => {
   return (
     <div className="card">
       <ul>
-        <h2>Personal</h2>
+        <h2>{props.title}</h2>
         <li>{person.name}</li>
         <li>{person.age} años</li>
         <li>{person.favoriteMovie}</li>
