@@ -6,19 +6,16 @@ import StackTech from './components/StackTech';
 
 function App() {
   
-
-  //Hacer un componente por cada tarjeta/card
-
   return (
     <div className="App">
       <div className="container">
-        <Personal />
+        <Personal title='Personal'/>
 
-        <Hobbies />
+        <Hobbies title='Hobbies'/>
 
-        <FavoriteFood />
+        <FavoriteFood title='Mi Stack Tech' />
         
-        <StackTech />
+        <StackTech title='Comida favorita'/>
       </div>
     </div>
   )
