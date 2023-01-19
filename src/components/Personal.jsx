@@ -1,10 +1,9 @@
-
 const Personal = () => {
   const person = {
-    name: 'Edgar Méndez',
+    name: "Edgar Méndez",
     age: 31,
     favoriteMovie: "Reservoir Dogs",
-    favoriteMusic: "Clasica"
+    favoriteMusic: "Clasica",
   };
 
   return (
@@ -16,8 +15,8 @@ const Personal = () => {
         <li>{person.favoriteMovie}</li>
         <li>{person.favoriteMusic}</li>
       </ul>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Personal
+export default Personal;
